@@ -1,0 +1,95 @@
+*{
+    box-sizing:border-box;
+    
+}
+
+
+#container{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5% 7%;
+    margin-top: 2%;
+    font-size: 20px;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 4px;
+    background-color: rgb(197, 192, 192);
+}
+
+ul{
+    list-style-type: none;
+    margin: 5px;
+    padding:7px;
+    font-size: large;
+    overflow:hidden;
+    background-color: #333;
+}
+
+li{
+    display: inline;
+    float: left;
+}
+li a:hover{
+    background-color: #111;
+    color: red;
+}
+li a {
+    display: block;
+    padding: 0;
+    text-align: center;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='file'],
+textarea{
+    padding: 4px;
+    width:50%;
+    height:10%;
+    border: 1px  solid black;
+    border-radius: 2px;
+    margin :10px;
+}
+
+input[type='submit']{
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 50%;
+    padding: 10px;
+    background:  rgb(0, 145, 255) ;
+    color:whitesmoke;
+    font-weight: 900;
+    border-radius: 10px;
+    
+}
+
+input[type='submit']:hover{
+    background-color: #111;
+    color: red;
+    cursor: pointer;
+}
+#main{
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    color: black;
+    background-color: rgb(161, 222, 254);
+    border:2px solid #333;
+}
+#form{
+    background-color:ghostwhite;
+    padding: 0%;
+    border:2px solid #333;
+    margin:1%;
+    font-weight: 550;
+}
+.sender{
+    border: 3px solid black;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(161, 222, 254);
+}
+

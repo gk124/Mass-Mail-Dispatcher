@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(253, 218, 218);
+    border: 5px solid #0000;
+    align-items: center;
+    
+}
+center{
+    margin-left: 15% ;
+    margin-right: 15% ;
+    margin-top: 3%;
+}
+ul{
+    list-style-type: none;
+    margin: 5px;
+    padding:3px;
+    overflow:hidden;
+    background-color: #333;
+    
+}
+
+li{
+    display: inline;
+    float: left;
+}
+li a:hover{
+    background-color: #111;
+    color: red;
+}
+li a {
+    display: block;
+    padding: 0;
+    text-align: center;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.row{
+    margin-right: -5px;
+    margin-left: -5px;
+}
+.column{
+    float: left;
+    width: 50%;
+    padding:20px;
+    font-weight: 500;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display:table;
+}
+
+table{
+    float:left;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width:100% ;
+    border: 2px solid black;
+}
+
+th,td{
+    text-align: left;
+    padding: 10px;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#result1{
+    border: 2px solid black;
+    margin: 2px; 
+    font-size: xx-large;
+    background-color: rgb(184, 249, 126);
+    padding: 5px 10px;
+}
+
+#result2{
+    background: rgb(161, 219, 244);
+    border: 2px solid black;
+    color:#000000;
+    padding: 5px 6px 6px 6px;
+    text-align: left;
+}
+#result2 h2{
+     font-size: xx-large;
+}
+
+input[type='submit']{
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    background:  rgb(0, 145, 255) ;
+    color:whitesmoke;
+    font-weight: 900;
+    border-radius: 10px;
+}
+
+input[type='submit']:hover{
+    background-color: rgb(62, 150, 4);
+    color:white;
+    cursor: pointer;
+}
+
+
