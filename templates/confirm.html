@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    
+    <link rel="stylesheet" href="../static/confirm.css" media="screen">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="/home" target="_blank">HOME</a></li>
+            <li><a href="https://github.com/gk124?tab=repositories" target="_blank">About</a></li>
+        </ul>
+        
+    </nav>
+    <br>
+    <center>
+    <h2 id="result1"><u>PREVIEW</u></h2>
+    <div id="result2">
+        <h2><u>Email is to be sent: </u></h2>
+        <h3>from: {{mls}}</h3>
+        <h3>Subject: {{sb}}</h3>
+        <h3>Body: {{bd}}</h3>
+    </div>
+    <br>
+    <form action="/send" method="post">
+        <input type="submit" name="submit" id="" value="Send Mails">
+        <input type="hidden" name="mail" value="{{mls }}">
+        <input type="hidden" name="pass" value="{{pas}}">
+        <input type="hidden" name="sub" value="{{sb}}">
+        <textarea hidden name="msg" id="msg" cols="50" rows="12" >{{bd}}</textarea>
+    </form>
+
+        
+    <hr><br>
+    <div class="row">
+        <div class="column">
+            <table>
+                <thead>
+                    <tr>
+                        <th><u>Valid Email-Id</u></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for mail_2 in valid %}
+                    <tr>
+                        <td>{{mail_2}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    <div class="column">
+    <table>
+        <thead>
+        <tr>
+            <th><u>Invalid Email-Id</u></th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for mail_1 in invalid %}
+        <tr>
+            <td>{{mail_1}}</td>
+           
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    </div>
+    
+
+    </div>  
+    <br>
+    </center>
+
+    
+    
+    <footer class="foot">
+        <ul>
+            <li> <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=gunjanku109@gmail.com&tf=1" target="_blank">Contact</a></li>
+        </ul>
+    </footer>
+    
+
+</body>
+</html>
+        
+
+
+
+

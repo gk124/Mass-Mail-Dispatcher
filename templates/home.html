@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mass Mail Dispatcher</title>
+
+    <link rel="stylesheet" href="../static/home.css" media="screen">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="https://github.com/gk124?tab=repositories" target="_blank">About</a></li>
+        </ul>
+    </nav>
+
+    
+    
+    <div id="container">
+    <h1 id="main"><u> WEB MAIL</u></h1><hr>
+    <h3>ENTER THE FOLLOWING DETAILS TO SEND THE MAIL</h3>
+    <div id="form">
+    <form  action="/verify" method="POST">
+        <div class="sender">
+            <h3><u>SENDER'S CREDENTIALS</u></h3>
+            <label for="mail">Email-Id:
+                <input type="mail" name="mail" id="mail" placeholder="Enter your email-Id" required>
+            </label>
+            <br>
+            <label for="pass">password :
+                <input type="password" name="pass" id="pass" placeholder="Enter your Password" required>
+            </label>
+            <a href="https://support.google.com/mail/?p=InvalidSecondFactor"  target="_blank" title="Have 2FA enabled on your Email? You may need to create an App Password. Read More" style="background-color:black">❔</a>
+        </div>
+        <br> 
+
+        <label for="sub">Subject :
+            <input type="text" name="sub" id="sub" placeholder="Subject" required>
+        </label>
+        <br>
+        <label for="msg">Body :</label>
+        <br>
+        <textarea name="msg" id="msg" cols="50" rows="12" placeholder="Enter the body" required></textarea>
+        <br>
+        <label for="attach"><a href="" title="To send any attachment" style="background-color:black">📂</a> :
+            <input type="file" id="attach" name="attach" placeholder="" multiple>
+        </label>
+        <br>
+        <fieldset>
+            <legend><b>Upload a .csv file containing the email-id of the recipients</b></legend>
+            <p>
+                <input type="file" name="file" id="file" accept=".csv">
+            </p>
+
+        </fieldset>
+        <input type="submit" name="submit" value="PREVIEW" id="sub">
+    </form>
+    </div>
+    </div>
+
+    <footer class="foot">
+        <ul>
+            <li> <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=gunjanku109@gmail.com&tf=1" target="_blank">Contact</a></li>
+        </ul>
+    </footer>
+    
+</body>
+</html>
+
